@@ -1,0 +1,14 @@
+platform :ios, '6.0'
+
+#use pod setup to update your repo if there are pods that can't be found. 
+#required pods
+def required_pods
+    pod 'Unirest-APIMATIC'
+    pod 'JSONModel'
+	pod 'ISO8601DateFormatter', '~> 0.7'
+end
+
+target 'WeatherAPI' do
+    required_pods
+end
+
